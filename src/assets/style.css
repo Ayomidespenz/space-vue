@@ -1,0 +1,384 @@
+Reset and Base Styles
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Barlow', sans-serif;
+  color: #fff;
+  background-color: #0b0d17;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* Typography */
+h1, h2, h3 {
+  font-family: 'Bellefair', serif;
+  text-transform: uppercase;
+  font-size: 10px;
+}
+
+
+h1 {
+  font-size: 80px;
+  line-height: 100px;
+}
+
+h2 {
+  font-size: 56px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+p {
+  font-size: 16px;
+  color: #d0d6f9;
+}
+
+/* Navigation */
+header {
+  position: absolute;
+  top: 0;
+  width: 90%;
+  padding: 24px 32px;
+  /* display: flex; */
+  /* border: 2px solid  yellow; */
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+nav {
+  display: flex;
+  /* border: 2px solid red; */
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 20px 10px;
+}
+
+.logo img {
+  width: 40px;
+  /* border: 2px solid red; */
+  margin-left: -340%;
+}
+
+.text {
+  display: flex;
+  /* border: 2px solid green; */
+  gap: 32px;
+  width: 70%;
+  margin-right: 5%;
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(40px);
+  padding: 20px 40px;
+}
+
+.text a {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 16px;
+  /* border: 2px solid green; */
+  color: #fff;
+  margin-left: 40px;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2.7px;
+  transition: color 0.3s;
+}
+
+.text a:hover {
+  color: #d0d6f9;
+}
+
+.text a.active {
+  border-bottom: 3px solid #fff;
+}
+
+/* Home Page */
+.home-page {
+  background: url('/assets/home/background-home-desktop.jpg') no-repeat center/cover;
+  /* min-height: 100vh; */
+  
+  display: flex;
+  /* border: 3px solid red; */
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hero {
+    /* border: 3px solid red; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 165px;
+  margin-top: 150px;
+  margin-bottom: 100px;
+}
+
+.hero-text {
+  max-width: 450px;
+}
+
+.hero-text h1 {
+  font-size: 20px;
+  line-height: 100px;
+}
+
+.hero-text h1 span {
+  /* display: block; */
+  font-size: 80px;
+}
+
+.hero-text p {
+  font-size: 22px;
+  line-height: 32px;
+}
+
+.explore-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 274px;
+  height: 274px;
+  background: #fff;
+  color: #0b0d17;
+  font-family: 'Bellefair', serif;
+  font-size: 32px;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 50%;
+  transition: box-shadow 0.3s;
+}
+
+.explore-btn:hover {
+  box-shadow: 0 0 0 88px rgba(255, 255, 255, 0.1);
+}
+
+/* Destination Page */
+.destination-page {
+  background: url('/assets/destination/background-destination-desktop.jpg') no-repeat center/cover;
+  min-height: 100vh;
+  padding: 150px 165px 50px;
+}
+
+#pick {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 28px;
+  letter-spacing: 4.72px;
+  margin-bottom: 64px;
+}
+
+#pick span {
+  color: #fff;
+  opacity: 0.25;
+  margin-right: 28px;
+}
+
+.destination-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 80px;
+}
+
+.destination-image img {
+  width: 445px;
+  height: 445px;
+}
+
+.destination-content {
+  max-width: 445px;
+}
+
+.tabs {
+  display: flex;
+  gap: 36px;
+  margin-bottom: 37px;
+}
+
+.tab {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 16px;
+  color: #d0d6f9;
+  text-transform: uppercase;
+  letter-spacing: 2.7px;
+  background: none;
+  border: none;
+  border-bottom: 3px solid transparent;
+  padding-bottom: 12px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.tab:hover {
+  border-bottom-color: rgba(255, 255, 255, 0.5);
+}
+
+.tab.active, .tab[aria-selected="true"] {
+  color: #fff;
+  border-bottom-color: #fff;
+}
+
+#destination-name {
+  font-size: 100px;
+  margin-bottom: 14px;
+}
+
+#destination-description {
+  font-size: 18px;
+  line-height: 32px;
+  margin-bottom: 54px;
+  padding-bottom: 54px;
+  border-bottom: 1px solid #383b4b;
+}
+
+.destination-meta {
+  display: flex;
+  gap: 80px;
+}
+
+.destination-meta div {
+  flex: 1;
+}
+
+.destination-meta h3 {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 14px;
+  letter-spacing: 2.36px;
+  color: #d0d6f9;
+}
+
+.destination-meta p {
+  font-family: 'Bellefair', serif;
+  font-size: 28px;
+  color: #fff;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  /* Tablet */
+  .home-page {
+    background-image: url('/assets/home/background-home-tablet.jpg');
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 0 100px;
+    /* border: 2px solid red; */
+    margin-top: 100px;
+  }
+
+  .hero-text {
+    margin-bottom: 90px;
+  }
+
+  .hero-text h1 {
+    font-size: 80px;
+    line-height: 100px;
+  }
+
+  .destination-page {
+    background-image: url('/assets/destination/background-destination-tablet.jpg');
+    padding: 100px 50px;
+  }
+
+  .destination-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .destination-image img {
+    width: 300px;
+    height: 300px;
+  }
+
+  .tabs {
+    justify-content: center;
+  }
+
+  .destination-meta {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Mobile */
+  .home-page {
+    background-image: url('/assets/home/background-home-mobile.jpg');
+  }
+
+  header {
+    padding: 16px;
+  }
+
+  .text {
+    display: none; /* Mobile menu TBD */
+  }
+
+  .hero {
+    padding: 0 24px;
+    margin-top: 48px;
+  }
+
+  .hero-text h1 {
+    font-size: 80px;
+  }
+
+  .hero-text p {
+    font-size: 15px;
+    line-height: 25px;
+  }
+
+  .explore-btn {
+    width: 150px;
+    height: 150px;
+    font-size: 20px;
+  }
+
+  .destination-page {
+    background-image: url('/assets/destination/background-destination-mobile.jpg');
+    padding: 88px 24px;
+  }
+
+  #pick {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .destination-image img {
+    width: 170px;
+    height: 170px;
+  }
+
+  #destination-name {
+    font-size: 56px;
+  }
+
+  #destination-description {
+    font-size: 15px;
+    line-height: 25px;
+  }
+
+  .destination-meta {
+    flex-direction: column;
+    gap: 32px;
+  }
+}
+
+
+ .technology-page {
+  /* background: #0b0d17;  */
+  min-height: 100vh;
+  padding: 150px 165px;
+}
+.crew-page, h2{
+  font-size: 35px;
+}
+.crew-page, p{
+   font-size: 22px;
+}
