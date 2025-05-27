@@ -2,7 +2,7 @@
   <div class="crew-page">
     <div class="main-img">
     <main>
-      <h1><span>02</span> Meet your crew</h1>
+      <h1><span>02</span> Meet your crews</h1>
       <div class="crew-flex">
         <div class="crew-info">
           <div v-if="currentCrew">
