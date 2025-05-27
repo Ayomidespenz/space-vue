@@ -1,6 +1,6 @@
 <template>
   <section class="destination-container">
-    <nav-bar />
+    <!-- <Navbar /> -->
     <div class="destination-image">
       <picture>
         <source :srcset="selectedDestination.images.webp" type="image/webp">
@@ -39,9 +39,10 @@
 </template>
 
 <script>
+// import Navbar from './components/Navbar.vue'
 import data from '../data.json'
-
 export default {
+  // components:{ Navbar },
 
   name: 'DestinationContent',
   data() {

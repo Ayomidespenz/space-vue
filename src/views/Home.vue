@@ -1,6 +1,6 @@
 <template>
   <div class="home-page">
-    <NavBar />
+    <!-- <NavBar /> -->
     <main>
       <Hero />
     </main>
@@ -8,12 +8,12 @@
 </template>
 
 <script>
-import NavBar from '../components/NavBar.vue'
+// import NavBar from '../components/NavBar.vue'
 import Hero from '../components/Hero.vue'
 
 export default {
   name: 'Home',
-  components: { NavBar, Hero }
+  components: {  Hero }
 }
 </script>
 

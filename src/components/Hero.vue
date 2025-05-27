@@ -1,5 +1,5 @@
 <template>
-    <NavBar/>
+    <!-- <NavBar/> -->
   <section class="hero">
     <div class="hero-text">
       <h1 id="So">So, you want to travel to <span>Space</span></h1>
@@ -10,9 +10,9 @@
 </template>
 
 <script>
-import NavBar from '../components/NavBar.vue'
+// import NavBar from '../components/NavBar.vue'
 export default {
-    components:{ NavBar},
+    // components:{ NavBar},
   name: 'Hero'
 }
 </script>

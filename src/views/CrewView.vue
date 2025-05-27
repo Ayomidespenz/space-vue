@@ -1,6 +1,6 @@
 <template>
   <div class="crew-page">
-    <Navbar />
+    <!-- <Navbar /> -->
     <div class="main-img">
     <main>
       <h1><span>02</span> Meet your crew</h1>
@@ -32,12 +32,13 @@
 </template>
 
 <script>
-import Navbar from '../components/Navbar.vue'
+// import Navbar from '../components/Navbar.vue'
+// import Navbar from '../components/Navbar.vue'
 import data from '../data.json'
 
 export default {
   name: 'Crew',
-  components: { Navbar },
+  // components: { Navbar },
   data() {
     return {
       crew: data.crew,
