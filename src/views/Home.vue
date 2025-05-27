@@ -1,6 +1,5 @@
 <template>
   <div class="home-page">
-    <!-- <NavBar /> -->
     <main>
       <Hero />
     </main>
@@ -8,7 +7,6 @@
 </template>
 
 <script>
-// import NavBar from '../components/NavBar.vue'
 import Hero from '../components/Hero.vue'
 
 export default {

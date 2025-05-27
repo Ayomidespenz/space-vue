@@ -1,5 +1,4 @@
 <template>
-  <!-- <NavBar/> -->
   <div id="main">
     <div id="part1">
       <h3 id="meet"><span>03</span> Space launch 101</h3>
@@ -34,9 +33,7 @@
 </template>
 
 <script>
-// import NavBar from '../components/NavBar.vue'
 export default {
-//   components: { NavBar },
   data() {
     return {
       technology: [
